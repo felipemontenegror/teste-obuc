@@ -1,0 +1,60 @@
+  
+* {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    display: grid;
+    grid-template-rows: 10vh 90vh;
+    grid-template-columns: 1fr 4fr;
+    grid-template-areas: "top top"
+                        "menu content";
+
+}
+.container>div{
+
+}
+.logo_container{
+    grid-area: top;
+    background-image: url(../img/admin-small.png);
+    font-style: italic;
+    color: #fff;
+
+}
+
+.logo {
+    display: flex;
+    text-align: left;
+
+}
+.button {
+    display: flex;
+    text-align: right;
+}
+
+.menu{
+    background-color: #4682B4;
+    background-image: linear-gradient( top, 50% );
+    grid-area: menu;
+
+}
+
+.menu ul {
+
+}
+
+/*@media (min-width: 800px) {
+    .button{
+        display: none
+    }
+    .menu ul {
+        display: flex;
+    }
+}*/
+
+.content{
+    background-color: white;
+    grid-area: content;
+    text-align: center;
+}
