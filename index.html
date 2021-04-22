@@ -31,32 +31,54 @@
 
         <div class="content">
 
-    <head>
-        <title>Local de Trabalho</title>
-    </head>
-        <body>
+            <h1 id="title">Locais de Trabalho</h1>
 
-            <h1 id="title">Local de Trabalho</h1>
-            <h3>Prédio</h3>
-            <form method="post">
-                <select name="predio">
-                    <option value="1">Prédio 1</option>
-                    <option value="2">Prédio 2</option>
-                    <option value="3">Prédio 3</option>
-                    <option value="4">Prédio 4</option>
-                </select>
-            </form>
+            <table>
+                <tr>
+                    <td>
+                        <form onsubmit="event.preventDefault();onFormSubmit()" autocomplete="off">
+                            <div>
+                            <label>Predio</label>
+                                <select name="predio" id="predio">
+                                    <option value="0"></option>
+                                    <option value="1">Prédio 1</option>
+                                    <option value="2">Prédio 2</option>
+                                    <option value="3">Prédio 3</option>
+                                    <option value="4">Prédio 4</option>
+                                </select>
+                            </div>
 
-            <form id="formulario">
-                <label for="input"> Local de trabalho </label>
-                <input id="input" type="text">
-                <button>Submit</button>
-            </form>
+                            <div>
+                                <label>Local de trabalho</label>
+                                <input type="text" name="fullWork" id="fullWork">
+                            </div>  
+                        <div class="form-action-buttons">
+                            <input type="submit" value="submit">
+                        </div>
+                    </form>
+                    </td>
+                    
+                    <td>
+                        <table class="list" id="employedList">
+                            <thead>
+                            <tr>
+                                <th>Predio</th>
+                                <th>Local de trabalho</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                                
+                            </tbody>
 
-            <h3>Nomes cadastrados</h3>
-            <div id="nomes"></div>
+                        </table>
 
-            <script src="dataWork.js"></script>
+                    </td>
+                </tr>
+            </table>
+
+
+
+            <script src="./js/dataWork.js"></script>
             </select>
     
         </body>
