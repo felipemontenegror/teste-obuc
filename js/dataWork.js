@@ -5,7 +5,7 @@ function onFormSubmit() {
     if (selectedRow == null)
         insertNewRecord(formData)
         else
-        updateRecord(formData)
+            updateRecord(formData)
     resetForm()
 }
 
@@ -52,3 +52,4 @@ function onDelete(td) {
     document.getElementById('employedList').deleteRow(row.rowIndex)
     resetForm()
 }
+
