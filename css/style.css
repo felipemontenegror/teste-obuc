@@ -16,6 +16,9 @@
 
 }
 .logo_container{
+    display: flex;
+    justify-content: space-between;
+    padding: 1px;
     grid-area: top;
     background-image: url(../img/admin-small.png);
     font-style: italic;
@@ -24,29 +27,61 @@
 }
 
 .logo {
-    display: flex;
+    justify-content: space-between;
+    padding: 20px;
     text-align: right;
+    font-size: 3vmin;
 
 }
 .button {
     display: flex;
+    margin-top: 10px;
+    margin-right: 40px;
     text-align: right;
+}
+
+.button_adm {
+    margin-top: 5px;
+    margin-right: 4px;
+
+
 }
 
 
 
 .menu{
-    background-color: #4682B4;
+    background-color: #0b406b;
     background-image: linear-gradient( top, 50% );
     grid-area: menu;
 
 }
 
 .menu ul {
+    width:auto;
+    border:0px solid #fff;
+    background:#0b406b;
+
+    }
+
+.menu li {
+        border-bottom:2px solid #4682B4;
+        border-style:ridge;
+        border-bottom-width: 7px;
+        border-top-width: 0;
+        border-right-width: 0;
+        border-left-width: 0;
 
 }
 
-
+.menu ul li a{
+    flex-direction: row;
+    text-decoration:none;
+    font-family: sans-serif;
+    font-size:20px;
+    color:#fff;
+    border-left:5px solid;
+    padding-left:5px;
+}
 .content{
     background-color: white;
     grid-area: content;
@@ -55,14 +90,20 @@
 }
 
 table {
-    border-collapse: collapse;
-    text-align: center;
+    text-align: flex;
+    padding-left: 70px;
+    color: #0b406b
+    
 
 
 }
 
 h4 {
-    
+    font-family:'Times New Roman', Times, serif;
+    text-align: left;
+    padding-top: 80px;
+    padding-left: 70px;
+    color: #0b406b
 }
 
 
@@ -84,17 +125,23 @@ input[type=text], input[type=numer]{
     border: 1px solid #ccc;
     border-radius: 4px;
     box-sizing: border-box;
+    color: #0b406b
 }
 
 input[type=submit]{
     width: 30%;
     background-color: #ddd;
     margin: 8px 0;
+    color: #0b406b
 
 }
 
 /*@media (min-width: 800px) {
     .button{
         display: none
+    }
+
+    .menu ul{
+        display: flex
     }
 }*/

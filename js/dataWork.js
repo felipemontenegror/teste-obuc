@@ -24,8 +24,8 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1)
     cell2.innerHTML = data.fullWork
     cell2 = newRow.insertCell(2)
-    cell2.innerHTML = `<a style="cursor: pointer" onClick="onEdit(this)">Edit | </a>
-                        <a style="cursor: pointer" onClick="onDelete(this)">Delete</a>`
+    cell2.innerHTML = `<a style="cursor: pointer" onClick="onEdit(this)"><img src="./img/draw.png" width=18 height=20>  </a>
+                        <a style="cursor: pointer" onClick="onDelete(this)"><img src="./img/trash-bin.png" width=18 height=20></a>`
 }
 
 function resetForm() {
@@ -47,7 +47,7 @@ function updateRecord(formData) {
 }
 
 function onDelete(td) {
-    if(confirm('Está decidido de deltar esse item?'))
+    if(confirm('Tem certeza que deseja deletar este idem ?'))
     row = td.parentElement.parentElement
     document.getElementById('employedList').deleteRow(row.rowIndex)
     resetForm()
