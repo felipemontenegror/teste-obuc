@@ -24,8 +24,8 @@ function insertNewRecord(data) {
     cell2 = newRow.insertCell(1)
     cell2.innerHTML = data.fullWork
     cell2 = newRow.insertCell(2)
-    cell2.innerHTML = `<a onClick="onEdit(this)">Edit</a>
-                        <a onClick="onDelete(this)">Delete</a>`
+    cell2.innerHTML = `<a style="cursor: pointer" onClick="onEdit(this)">Edit | </a>
+                        <a style="cursor: pointer" onClick="onDelete(this)">Delete</a>`
 }
 
 function resetForm() {
@@ -36,8 +36,8 @@ function resetForm() {
 
 function onEdit(td){
     selectedRow = td.parentElement.parentElement
-    document.getElementById('fullWork').value = selectedRow.cells[0].innerHTML
     document.getElementById('predio').value = selectedRow.cells[0].innerHTML
+    document.getElementById('fullWork').value = selectedRow.cells[1].innerHTML
 }
 
 function updateRecord(formData) {

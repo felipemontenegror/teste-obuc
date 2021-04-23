@@ -25,13 +25,15 @@
 
 .logo {
     display: flex;
-    text-align: left;
+    text-align: right;
 
 }
 .button {
     display: flex;
     text-align: right;
 }
+
+
 
 .menu{
     background-color: #4682B4;
@@ -44,17 +46,55 @@
 
 }
 
-/*@media (min-width: 800px) {
-    .button{
-        display: none
-    }
-    .menu ul {
-        display: flex;
-    }
-}*/
 
 .content{
     background-color: white;
     grid-area: content;
     text-align: center;
+
 }
+
+table {
+    border-collapse: collapse;
+    text-align: center;
+
+
+}
+
+h4 {
+    
+}
+
+
+td, th {
+    border: 1px solid #dddddddd;
+    text-align: center;
+    padding: 8px;
+    justify-content: center;
+}
+
+table.list thead>tr {
+    background-color: #0b406b;
+    color: #fff
+}
+
+input[type=text], input[type=numer]{
+    width: 100px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit]{
+    width: 30%;
+    background-color: #ddd;
+    margin: 8px 0;
+
+}
+
+/*@media (min-width: 800px) {
+    .button{
+        display: none
+    }
+}*/
