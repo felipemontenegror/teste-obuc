@@ -12,17 +12,17 @@
                         "menu content";
 
 }
-.container>div{
 
-}
 .logo_container{
     display: flex;
     justify-content: space-between;
     padding: 1px;
     grid-area: top;
-    background-image: url(../img/admin-small.png);
+    
+    opacity: 0.80;
     font-style: italic;
     color: #fff;
+    background-image: linear-gradient(to right, transparent 0%, #0b406b 100%), url(../img/admin-small.png);
 
 }
 
@@ -50,8 +50,7 @@
 
 
 .menu{
-    background-color: #0b406b;
-    background-image: linear-gradient( top, 50% );
+    background-image: linear-gradient(to top, #8cc5f3 , #0b406b );
     grid-area: menu;
 
 }
