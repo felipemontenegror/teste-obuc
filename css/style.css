@@ -111,11 +111,16 @@ td, th {
     text-align: center;
     padding: 8px;
     justify-content: center;
+    
 }
 
 table.list thead>tr {
     background-color: #0b406b;
-    color: #fff
+    color: #fff;
+    text-align: center;
+
+
+    
 }
 
 input[type=text], input[type=numer]{
@@ -133,6 +138,11 @@ input[type=submit]{
     margin: 8px 0;
     color: #0b406b
 
+}
+
+
+div {
+    display: inline-block;
 }
 
 /*@media (min-width: 800px) {
